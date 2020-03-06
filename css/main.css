@@ -132,7 +132,7 @@ menu {
   float: left;
 }
 #mainMenu {
-  width: 692px;
+  width: auto;
   padding-left: 27px;
   padding-right: 27px;
   float: left;
@@ -149,7 +149,7 @@ menu {
 }
 #logo {
   height: 160px;
-  width: 160px;
+  width: auto;
   padding-left: 21px;
   padding-right: 21px;
   float: left;
