@@ -98,6 +98,87 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+
+}
+#wrapper {
+  width: 1208px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-size: 200%;
+}
+h2 {
+  font-size: 180%;
+}
+h3 {
+  font-size: 160%;
+}
+menu {
+  padding: 0px;
+  margin: 0px;
+}
+#top li {
+  display: inline;
+}
+#content {
+  width: 692px;
+  padding-left: 27px;
+  padding-right: 27px;
+  float: left;
+}
+#mainMenu {
+  width: 692px;
+  padding-left: 27px;
+  padding-right: 27px;
+  float: left;
+  text-align: right;
+}
+#sidebar {
+  width: 420px;
+  padding-left: 21px;
+  padding-right: 21px;
+  float: left;
+}
+#mainArea {
+  clear: both;
+}
+#logo {
+  height: 160px;
+  width: 160px;
+  padding-left: 21px;
+  padding-right: 21px;
+  float: left;
+}
+#top {
+  height: 160px;
+  line-height: 160px;
+}
+#logo img {
+  height: 120px;
+  width: auto;
+}
+
+.callout {
+  width: 402px;
+  height: 200px;
+  float: left;
+}
+.centerimg {
+  width: 1208px;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  clear: left;
+  margin-top: 300px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -192,9 +273,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
