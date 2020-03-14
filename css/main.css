@@ -125,10 +125,11 @@ menu {
 #top li {
   display: inline;
 }
-#content {
-  width: 692px;
-  padding-left: 27px;
-  padding-right: 27px;
+#logo {
+  height: 160px;
+  width: auto;
+  padding-left: 21px;
+  padding-right: 21px;
   float: left;
 }
 #mainMenu {
@@ -138,22 +139,23 @@ menu {
   float: left;
   text-align: right;
 }
-#sidebar {
+
+#fMainArea {
+  clear: both;
+}
+#fContent {
+  width: 692px;
+  padding-left: 27px;
+  padding-right: 27px;
+  float: left;
+}
+#fSidebar {
   width: 420px;
   padding-left: 21px;
   padding-right: 21px;
   float: left;
 }
-#mainArea {
-  clear: both;
-}
-#logo {
-  height: 160px;
-  width: auto;
-  padding-left: 21px;
-  padding-right: 21px;
-  float: left;
-}
+
 #top {
   height: 160px;
   line-height: 160px;
