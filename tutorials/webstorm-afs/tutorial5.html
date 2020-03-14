@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Webstorm: Linux Commands and AFS</title>
+    <title>WebStorm: Linux Commands and Advanced AFS</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,7 +18,8 @@
 </head>
 <body>
 <!--[if IE]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
 <![endif]-->
 
 <!-- Add your site or application content here -->
@@ -37,6 +38,46 @@
         </div>
     </header>
 
+    <main id="fMainArea">
+        <div id="fContent">
+            <h2>Logging into AFS</h2>
+            <p>To learn how to log on to your AFS account, follow the tutorial for <a href="tutorial1.html">creating
+                files/folder on AFS</a>.</p>
+
+            <h2>Basic Linux Commands</h2>
+            <p>Copy: <code>cp</code></p>
+            <p>Move/Rename: <code>mv</code></p>
+            <p>For a full tutorial on creating files/folder with terminal, click <a href="tutorial3.html">here</a>.</p>
+
+            <h2>Finding your Website</h2>
+            <p>Your AFS-hosted website(s) can be found in the public_html folder in your AFS root directory. To navigate
+                to this folder from your root directory (for example, as soon as you log in), use the command <strong>cd
+                    public_html</strong>.</p>
+
+            <h2>AFS Folder Structure and Web URLs</h2>
+            <p>The public_html folder responds with the root URL for your AFS user account. For example, when we look at
+                NJIT AFS, the <code>/public_html</code> folder corresponds with the public URL <code>https://web.njit.edu/~UCID/</code>. An
+                index.html file placed in the <code>/public_html</code> folder will automatically be served when you navigate to that
+                URL. Consequently, any subfolders within <code>/public_html</code> will be added on to the end of the web URL. For
+                example, an index.html file located in <code>/public_html/test</code> will be served when you navigate to
+                <code>https://web.njit.edu/~UCID/test/</code>.</p>
+        </div>
+    </main>
+
+    <div id="fSidebar">
+        <menu>
+            <h3>Definitions</h3>
+            <li><strong>Linux</strong> - an open-source Unix-like computer operating system</li>
+            <li><strong>HTML</strong> - the standard markup language for documents designed to be displayed in a web browser</li>
+            <li><strong>CSS</strong> - a style sheet language used for describing the presentation of a document written in a markup language like HTML</li>
+            <li><strong>IDE</strong> - (integrated development environment) a software application that provides comprehensive facilities to computer programmers for software development</li>
+            <li><strong>WebStorm</strong> - a popular IDE for working with HTML, CSS, and other web development languages</li>
+
+            <h3>Links</h3>
+            <a href="https://guide.freecodecamp.org/linux/basic-linux-commands/">More basic Linux commands</a>
+        </menu>
+    </div>
+
 </div>
 
 <footer>
@@ -44,7 +85,8 @@
 </footer>
 
 <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>

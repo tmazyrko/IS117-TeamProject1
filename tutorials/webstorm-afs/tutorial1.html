@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Webstorm: Autosave and Deploy Setup</title>
+    <title>WebStorm: Auto-save and Deployment</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,7 +18,8 @@
 </head>
 <body>
 <!--[if IE]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
 <![endif]-->
 
 <!-- Add your site or application content here -->
@@ -37,6 +38,45 @@
         </div>
     </header>
 
+    <main id="fMainArea">
+        <div id="fContent">
+            <h2>How to set up WebStorm to auto-save and deploy to AFS</h2>
+            <p>AFS (Andrew File System) is a fantastic tool that allows us to store files on servers for the purposes of
+                backing them up, accessing them remotely, and even web hosting.</p>
+            <p>Normally, AFS is accessed through terminal commands as it primarily runs on Linux, but we can set up
+                WebStorm to automatically upload the latest versions of files in our projects to a specified user
+                account and directory in AFS through a graphical interface. For the purposes of this tutorial, we will
+                be using NJIT AFS.</p>
+            <p>The AFS features and configuration in WebStorm can be found by navigating to the Tools menu, and then
+                opening the Deployment sub-menu. To enable AFS deployment for your current project, open the
+                Configuration window as shown below.</p>
+            <img src="../../img/webstorm/tutorial1/img01.png">
+            <p>In the deployment configuration window, click the ‘+’ icon to add a new remote connection. Set the type
+                to ‘SFTP’ and fill out the hostname for your AFS server. Next, enter your AFS login information, and
+                click ‘Test Connection.’ If the test is successful, proceed to filling out the root path box—this is the
+                AFS directory where your project folder will be uploaded. In most cases, using the autodetect feature
+                will fill in the root path, but you may have to add subdirectories if you do not want your project to
+                reside in the root of your AFS account. ‘Web server URL’ is only required if your AFS server supports
+                web hosting.</p>
+            <img src="../../img/webstorm/tutorial1/img02.png">
+            <p>The final step is to set the paths in the mapping tab. ‘Local path’ should point to your local project
+                directory, while ‘Deployment path’ and ‘Web path’ are the relative paths of where your project will be
+                on AFS.</p>
+            <img src="../../img/webstorm/tutorial1/img03.png">
+            <p>Optionally, you can have WebStorm automatically upload to AFS whenever a file is updated and saved. To
+                enable this, navigate once more to the ‘Deployment’ menu and enable “Automatic Upload.”</p>
+        </div>
+    </main>
+
+    <div id="fSidebar">
+        <menu>
+            <h3>Definitions</h3>
+            <li><strong>Terminal</strong> - a program, or emulator, which provides a text-based interface for entering computer commands</li>
+            <li><strong>Login</strong> - a set of credentials used to authenticate a user, often consisting of a username and password</li>
+            <li><strong>AFS</strong> - (Andrew File System) a distributed file system which uses a set of trusted servers to present a homogeneous, location-transparent file name space to all the client workstations</li>
+        </menu>
+    </div>
+
 </div>
 
 <footer>
@@ -44,7 +84,8 @@
 </footer>
 
 <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
